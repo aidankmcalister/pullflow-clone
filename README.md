@@ -2,5 +2,5 @@
 
 This is a clone of [Pullflow](https://pullflow.com/)'s website created to showcase my skills
 
-Created with [RedwoodJS](https://redwoodjs.com), and [TailwindCSS](https://tailwindcss.com/)
+Created using [RedwoodJS](https://redwoodjs.com), and [TailwindCSS](https://tailwindcss.com/), and Typescript.
 
