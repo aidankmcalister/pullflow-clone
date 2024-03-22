@@ -1,3 +1,6 @@
+import Footer from 'src/components/Footer/Footer'
+import Header from 'src/components/Header/Header'
+
 type MainLayoutProps = {
   children?: React.ReactNode
 }
@@ -5,9 +8,9 @@ type MainLayoutProps = {
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <>
-      <p>header</p>
+      <Header />
       {children}
-      <p>footer</p>
+      <Footer />
     </>
   )
 }

@@ -11,3 +11,8 @@
 /**
  * END --- SETUP TAILWINDCSS EDIT
  */
+
+
+ body {
+  background-color: rgb(14, 15, 20);
+ }
