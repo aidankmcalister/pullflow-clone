@@ -14,5 +14,6 @@
 
 
  body {
-  background-color: rgb(14, 15, 20);
- }
+  @apply bg-brand-background;
+  @apply text-brand-white;
+}

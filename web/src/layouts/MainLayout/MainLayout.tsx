@@ -7,11 +7,11 @@ type MainLayoutProps = {
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
-    <>
+    <section className="w-full overflow-hidden">
       <Header />
       {children}
       <Footer />
-    </>
+    </section>
   )
 }
 
