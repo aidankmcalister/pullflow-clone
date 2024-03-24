@@ -2,7 +2,7 @@
 import { useState } from 'react'
 
 import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, BugAntIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   {
@@ -49,13 +49,10 @@ const Header = () => {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="#" className="-m-1.5 flex items-center p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt=""
-            />
+            <BugAntIcon className="h-6 w-auto text-purple-400" />
+            <p className="ml-1 text-2xl">Pullflow</p>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -65,7 +62,10 @@ const Header = () => {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <Bars3Icon
+              className="h-6 w-6 text-brand-white"
+              aria-hidden="true"
+            />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
@@ -94,13 +94,10 @@ const Header = () => {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-brand-background px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#" className="-m-1.5 flex items-center p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt=""
-              />
+              <BugAntIcon className="h-6 w-auto text-purple-400" />
+              <p className="ml-1 text-2xl">Pullflow</p>
             </a>
             <button
               type="button"
@@ -108,7 +105,10 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon
+                className="h-6 w-6 text-brand-white"
+                aria-hidden="true"
+              />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -118,7 +118,7 @@ const Header = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 text-base leading-7 text-white hover:bg-gray-800"
+                    className="-mx-3 block rounded-lg px-3 font-light leading-7 text-white hover:bg-gray-800"
                   >
                     {item.name}
                   </a>
@@ -128,13 +128,13 @@ const Header = () => {
                 <h1 className="mt-5">Legal</h1>
                 <a
                   href="#"
-                  className="block rounded-lg px-3 py-2.5 text-sm leading-7 text-white hover:bg-gray-800"
+                  className="block  rounded-lg px-3 py-2.5 text-sm font-light leading-7 text-white hover:bg-gray-800"
                 >
                   Privacy
                 </a>
                 <a
                   href="#"
-                  className="block rounded-lg px-3 py-2.5 text-sm leading-7 text-white hover:bg-gray-800"
+                  className="block  rounded-lg px-3 py-2.5 text-sm font-light leading-7 text-white hover:bg-gray-800"
                 >
                   Terms of User
                 </a>

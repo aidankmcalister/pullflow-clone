@@ -9,7 +9,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <section className="w-full overflow-hidden">
       <Header />
-      {children}
+      <section className="mx-6">{children}</section>
       <Footer />
     </section>
   )
